@@ -8,7 +8,7 @@ export class ViewerService {
 
   @OnEvent("video.created")
   notify({ title }: VideoCreatedEvent) {
-    //throw new Error("Error")
+    throw new Error("Error")
     console.log("1. Notifying...", title);
     return 1;
   }
@@ -22,7 +22,7 @@ export class ViewerService {
 
   @OnEvent("video.created1")
   async notify1({ title }: VideoCreatedEvent) {
-    //throw new Error("Error")
+    throw new Error("Error")
     console.log("1. Notifying...", title);
     return 1;
   }
@@ -36,7 +36,7 @@ export class ViewerService {
 
   @OnEvent("video.created2", { async: true })
   notify2({ title }: VideoCreatedEvent) {
-    //throw new Error("Error")
+    throw new Error("Error")
     console.log("1. Notifying...", title);
     return 1;
   }
@@ -50,7 +50,7 @@ export class ViewerService {
 
   @OnEvent("video.created3")
   async notify3({ title }: VideoCreatedEvent) {
-    //throw new Error("Error")
+    throw new Error("Error")
     console.log("1. Notifying...", title);
     return 1;
   }
