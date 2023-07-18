@@ -1,5 +1,5 @@
 
-## NestJS events and tasks
+## NestJS Task Scheduling
 
 ```
 $ npm install --save @nestjs/schedule
